@@ -290,7 +290,7 @@ export const TaskCard = ({
         }
         .task-card.completed {
           opacity: 0.72;
-          background: rgba(17, 24, 39, 0.4);
+          background: rgba(244, 114, 182, 0.08);
         }
       `}</style>
     </div>

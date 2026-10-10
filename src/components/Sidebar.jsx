@@ -78,8 +78,8 @@ export const Sidebar = ({
           style={{
             position: 'fixed',
             inset: 0,
-            background: 'rgba(0, 0, 0, 0.6)',
-            backdropFilter: 'blur(4px)',
+            background: 'rgba(51, 20, 34, 0.45)',
+            backdropFilter: 'blur(6px)',
             zIndex: 35
           }}
         />
@@ -337,10 +337,10 @@ export const Sidebar = ({
             background: var(--bg-card-hover);
           }
           .nav-item.active {
-            color: #ffffff;
-            background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(168, 85, 247, 0.2));
-            border-color: rgba(99, 102, 241, 0.4);
-            font-weight: 600;
+            color: var(--accent-primary);
+            background: rgba(236, 72, 153, 0.12);
+            border-color: rgba(236, 72, 153, 0.3);
+            font-weight: 700;
           }
           .nav-icon {
             display: flex;
@@ -357,7 +357,7 @@ export const Sidebar = ({
             font-size: 0.75rem;
             padding: 2px 7px;
             border-radius: 10px;
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(236, 72, 153, 0.1);
             color: var(--text-dim);
             font-weight: 600;
           }

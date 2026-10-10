@@ -75,7 +75,7 @@ export const TaskModal = ({ isOpen, onClose, onSaveTask, editingTask, categories
       style={{
         position: 'fixed',
         inset: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+        backgroundColor: 'rgba(51, 20, 34, 0.45)',
         backdropFilter: 'blur(8px)',
         WebkitBackdropFilter: 'blur(8px)',
         display: 'flex',
@@ -194,7 +194,7 @@ export const TaskModal = ({ isOpen, onClose, onSaveTask, editingTask, categories
                 {categories
                   .filter((c) => c.id !== 'all')
                   .map((c) => (
-                    <option key={c.id} value={c.id} style={{ background: '#1e293b', color: '#fff' }}>
+                    <option key={c.id} value={c.id} style={{ background: 'var(--bg-secondary)', color: 'var(--text-main)' }}>
                       {c.name}
                     </option>
                   ))}

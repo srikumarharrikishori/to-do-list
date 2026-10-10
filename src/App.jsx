@@ -32,7 +32,12 @@ export default function App() {
   });
 
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('taskflow_theme') || 'dark';
+    const saved = localStorage.getItem('taskflow_theme');
+    // Default to the white & pink shade theme
+    if (!saved || saved === 'dark') {
+      return 'pink';
+    }
+    return saved;
   });
 
   const [soundEnabled, setSoundEnabled] = useState(() => {
@@ -120,7 +125,7 @@ export default function App() {
 
   // Handlers
   const handleToggleTheme = () => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setTheme((prev) => (prev === 'dark' ? 'pink' : 'dark'));
   };
 
   const handleToggleSound = () => {
@@ -463,7 +468,7 @@ export default function App() {
                 width: '64px',
                 height: '64px',
                 borderRadius: '50%',
-                background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2))',
+                background: 'linear-gradient(135deg, rgba(244, 63, 94, 0.15), rgba(236, 72, 153, 0.18))',
                 color: 'var(--accent-primary)',
                 display: 'flex',
                 alignItems: 'center',
