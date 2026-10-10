@@ -158,7 +158,7 @@ export const Header = ({
         <button
           className="btn-icon"
           onClick={onToggleTheme}
-          title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} mode`}
+          title={`Switch to ${theme === 'dark' ? 'White & Pink' : 'Dark Velvet'} mode`}
           aria-label="Theme Toggle"
         >
           {theme === 'dark' ? <IconSun size={19} /> : <IconMoon size={19} />}

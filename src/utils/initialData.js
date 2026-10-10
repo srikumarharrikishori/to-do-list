@@ -75,7 +75,7 @@ export const INITIAL_TASKS = [
 ];
 
 export const CATEGORIES = [
-  { id: 'all', name: 'All Tasks', icon: 'Layers', color: '#6366f1' },
+  { id: 'all', name: 'All Tasks', icon: 'Layers', color: '#ec4899' },
   { id: 'Work', name: 'Work', icon: 'Briefcase', color: '#3b82f6' },
   { id: 'Personal', name: 'Personal', icon: 'User', color: '#ec4899' },
   { id: 'Urgent', name: 'Urgent', icon: 'AlertTriangle', color: '#ef4444' },

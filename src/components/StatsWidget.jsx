@@ -17,8 +17,8 @@ export const StatsWidget = ({ tasks }) => {
       value: total,
       subtext: `${pending} remaining`,
       icon: <IconLayers size={20} />,
-      color: '#6366f1',
-      bg: 'rgba(99, 102, 241, 0.12)'
+      color: 'var(--accent-primary)',
+      bg: 'rgba(236, 72, 153, 0.14)'
     },
     {
       label: 'Completed',
